@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podstrony z Historią Nawigacji</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <!-- Pop-up 1 -->
+    <div id="popup1" class="popup">
+      <p>Wskazówka na Święta: Pamiętaj o tradycyjnych potrawach!</p>
+      <button onclick="closePopup('popup1')">Zamknij</button>
+  </div>
+
+  <!-- Pop-up 2 -->
+  <div id="popup2" class="popup">
+      <p>Wskazówka na Święta: Zrób przerwę na gorącą czekoladę!</p>
+      <button onclick="closePopup('popup2')">Zamknij</button>
+  </div>
+    <!-- Nagłówek -->
+    <div class="header">
+      <h1>Wesołych przgód podczas świąt!</h1>
+      <div class="header-buttons">
+        <button onclick="showPage('home')">Strona Główna</button>
+        <button onclick="showPage('page1')">Boże Narodzenie</button>
+        <button onclick="showPage('page2')">Boże Narodziny w innej religii</button>
+        <button onclick="showPage('page3')">Potrawy Swiąteczne</button>
+        <button onclick="showPage('page4')">
+          Bezpieczeństwo podczas ferri
+        </button>
+        <button onclick="showPage('page5')">Sylwester</button>
+      </div>
+    </div>
+
+    <!-- Strona Główna -->
+    <div id="home" class="page-content active">
+      <div class="container">
+        <!-- Lewa strona -->
+        <div class="left-side">
+          <h3>Ciekawe lub przydatne:</h3>
+          <a href="https://www.winiary.pl/porady/tradycyjna-wigilia?gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMgvT-92pD3Uc-kYef0EfRghntcKI7TUV0Tg0AJyd4_LEZLqdrsr3aBoCx0oQAvD_BwE&gclsrc=aw.ds">Przepisy świąteczne</a> <br><br>
+          <a href="https://wiadomosci.onet.pl/religia/urodziny-buddy/k3htp">urodziny Buddy</a> <br><br>
+          <a href="https://www.gov.pl/web/kppsp-pultusk/bezpieczne-ferie">Bezpieczenstwo podczas ferii</a> <br><br>
+          <a href="https://pl.wikipedia.org/wiki/Bo%C5%BCe_Narodzenie">Boże Narodzenie</a> <br>
+        </div>
+
+        <!-- Środkowa część -->
+        <div class="center">
+          <h2>Nasza strona oferuje 5 ciekawy sekcji, w ktorych znajdziecie m.in:</h2>
+          <p><strong>Boże Narodzenie</strong>- Tradycje Bożonarodzeniowe,Dekoracje Bożonarodzeniowe, Potrawy Wigilijne,Bezpieczeństwo podczas Świąt,Świąteczne aktywności</p>
+          <p><strong>Boże Narodzenie w innej religii</strong>- Wprowadzenie do Święta Buddy,Tradycje i Zwyczaje,Znaczenie Narodzin Buddy,Bezpieczeństwo podczas Świąt,Wskazówki dotyczące obchodów Vesak</p>
+          <p><strong>Potrawy Świąteczne</strong>- Potrawy i Tradycje np. Barszcz z uszkami,kutie,pierniki</p>
+          <p><strong>Bezpieczenstwo podczas ferii</strong>- Bezpieczne zabawy na śniegu,Ostrożność w górach,Bezpieczne kąpiele,Wskazówki dotyczące zdrowia,Wskazówki dotyczące zdrowia,Zachowanie ostrożności przy organizowaniu wyjazdów</p>
+        
+          <p><strong>Sylwester</strong>- Co to jest Sylwester,Tradycje sylwestrowe,Historia Sylwestra,Postanowienia noworoczne,Największe imprezy sylwestrowe</p>
+          
+        </div>
+
+        <!-- Prawa strona -->
+        <div class="right-side">
+          
+          <a href="zdjecia/reklama.jpg"></a>
+        </div>
+
+        <!-- Stopka -->
+        <div class="footer">
+          <p>&copy; 2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Podstrona 1 -->
+    <div id="page1" class="page-content">
+     <div class="content-container">
+      <h1>Wesołych Świąt Bożego Narodzenia!</h1>
+      <section>
+        <h2>1. Tradycje Bożonarodzeniowe</h2>
+        <p><strong>Wigilia</strong> – tradycja spotkania przy wigilijnym stole z dzieleniem się opłatkiem.</p>
+        <p><strong>Choinka</strong> – dekorowanie drzewka choinkowego symbolizuje radość i nadzieję.</p>
+        <p><strong>Kolędy</strong> – śpiewanie kolęd, które niosą radosną nowinę o narodzinach Jezusa.</p>
+        <p><strong>Prezenty</strong> – tradycja obdarowywania bliskich podarunkami, które symbolizują miłość i szacunek.</p>
+    </section>
+
+    <section>
+        <h2>2. Dekoracje Bożonarodzeniowe</h2>
+        <p><strong>Stroiki</strong> – wykonane z gałęzi iglastych, ozdobione świecami, symbolizują ciepło rodzinnego domu.</p>
+        <p><strong>Światełka</strong> – rozświetlają domy i ulice, tworząc magiczną atmosferę Świąt.</p>
+        <p><strong>Gwiazda Betlejemska</strong> – symbolizuje drogę do miejsca narodzin Jezusa.</p>
+        <p><strong>Bombki i łańcuchy</strong> – najpopularniejsze ozdoby choinkowe, które dodają uroku świątecznym drzewkom.</p>
+    </section>
+
+    <section>
+        <h2>3. Potrawy Wigilijne</h2>
+        <p><strong>Barszcz z uszkami</strong> – tradycyjna zupa, którą podaje się podczas Wigilii.</p>
+        <p><strong>Carp</strong> – karp w galarecie to jedno z dań, które nie może zabraknąć na wigilijnym stole.</p>
+        <p><strong>Pierogi</strong> – najczęściej z kapustą i grzybami, symbolizujące obfitość i radość.</p>
+        <p><strong>Karp w panierce</strong> – przygotowywany na wiele różnych sposobów, jest jednym z ulubionych dań świątecznych.</p>
+    </section>
+
+    <section>
+        <h2>4. Bezpieczeństwo podczas Świąt</h2>
+        <p><strong>Uważaj na świeczki</strong> – zawsze upewnij się, że są one bezpiecznie ustawione i nie zostaną zapalone w pobliżu łatwopalnych materiałów.</p>
+        <p><strong>Bezpieczne prezenty</strong> – sprawdź, czy nie ma małych elementów w zabawkach, które mogą stanowić zagrożenie dla dzieci.</p>
+        <p><strong>Uważaj na jedzenie</strong> – podczas obfitych świątecznych posiłków bądź ostrożny, aby uniknąć przejedzenia.</p>
+        <p><strong>Bezpieczne oświetlenie</strong> – upewnij się, że oświetlenie choinkowe i dekoracyjne jest zgodne z normami bezpieczeństwa.</p>
+    </section>
+
+    <section>
+        <h2>5. Wskazówki dotyczące obdarowywania prezentami</h2>
+        <p><strong>Personalizuj prezenty</strong> – wybieraj upominki, które będą odzwierciedlały gust i zainteresowania obdarowywanej osoby.</p>
+        <p><strong>Pakowanie prezentów</strong> – starannie zapakowane prezenty dodają uroku i radości z obdarowywania.</p>
+        <p><strong>Przygotowanie prezentów na czas</strong> – pamiętaj o zaplanowaniu zakupów i przygotowaniach wcześniej, aby uniknąć stresu w ostatniej chwili.</p>
+        <p><strong>Nie zapomnij o kartkach świątecznych</strong> – miły akcent, który może wyrazić twoje uczucia i życzenia na Święta.</p>
+    </section>
+
+    <section>
+        <h2>6. Świąteczne aktywności</h2>
+        <p><strong>Gotowanie wspólnie z rodziną</strong> – spędzaj czas w kuchni, przygotowując tradycyjne potrawy.</p>
+        <p><strong>Ozdabianie choinki</strong> – wspólne dekorowanie drzewka jest świetną okazją do spędzenia czasu z bliskimi.</p>
+        <p><strong>Gra w planszówki</strong> – wiele rodzin spędza czas na grze w gry planszowe, co sprzyja integracji i wspólnej zabawie.</p>
+        <p><strong>Śpiewanie kolęd</strong> – zorganizuj wspólne śpiewanie kolęd, aby wprowadzić wszystkich w świąteczny nastrój.</p>
+    </section>
+    <div class="countdown">
+      <h3>Do Bożego Narodzenia:</h3>
+      <p id="countdown-xmas"></p> <!-- Miejsce na odliczanie do Świąt -->
+  </div>
+     </div>
+     <center>
+      <div class="footer2">
+        <div class="content-container1">2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</div>
+        </div>
+      </center>
+      
+    </div>
+
+    <!-- Podstrona 2 -->
+    <div id="page2" class="page-content">
+      <div class="content-container">
+        <h1>Obchody Narodzin Buddy</h1>
+        <section>
+          <h2>1. Wprowadzenie do Święta</h2>
+          <p>W buddyzmie, <strong>Święto Narodzin Buddy</strong> (Vesak) obchodzone jest na całym świecie. Jest to jedno z najważniejszych świąt buddyjskich, które upamiętnia narodziny Siddharthy Gautamy, który stał się Buddą. Święto to ma na celu uczczenie jego życia oraz nauk.</p>
+      </section>
+  
+      <section>
+          <h2>2. Tradycje i Zwyczaje</h2>
+          <p><strong>Modlitwy i medytacje</strong> – podczas Vesak buddyści uczestniczą w ceremoniach modlitewnych, medytacjach oraz rytuałach, które mają na celu oczyszczenie umysłu i duchowe odrodzenie.</p>
+          <p><strong>Uroczystości w świątyniach</strong> – wielu buddyjskich wyznawców udaje się do świątyń, gdzie organizowane są procesje, modlitwy oraz ofiary składane na ołtarzach, w tym kwiaty i owoce.</p>
+          <p><strong>Święcenie wody</strong> – jedną z tradycji jest obmywanie posągu Buddy wodą, co symbolizuje oczyszczenie i duchowe odrodzenie.</p>
+          <p><strong>Udzielanie jałmużny</strong> – w tym dniu buddyści często angażują się w działania charytatywne, pomagając potrzebującym, co stanowi wyraz współczucia i altruizmu, zgodnie z naukami Buddy.</p>
+      </section>
+  
+      <section>
+          <h2>3. Znaczenie Narodzin Buddy</h2>
+          <p><strong>Rozpoczęcie drogi duchowej</strong> – narodziny Buddy są symbolem początku drogi duchowej, która prowadzi do oświecenia. Siddhartha Gautama, po osiągnięciu oświecenia, stał się Buddą i nauczał o 4 Szlachetnych Prawdach oraz Ośmiorakiej Ścieżce.</p>
+          <p><strong>Światło i mądrość</strong> – święto to jest także symbolem światła, które przynosi mądrość i oświecenie do wszystkich istot żyjących, zgodnie z naukami Buddy.</p>
+      </section>
+  
+      <section>
+          <h2>4. Bezpieczeństwo podczas Świąt</h2>
+          <p><strong>Bezpieczne uczestnictwo w ceremoniach</strong> – podczas obrzędów w świątyniach należy zachować ostrożność, zwłaszcza jeśli chodzi o ogień (np. lampki oliwne) oraz inne elementy rytualne, aby uniknąć wypadków.</p>
+          <p><strong>Uważność podczas medytacji</strong> – uczestnicy medytacji powinni zadbać o to, by wybrać spokojne miejsce, gdzie będą mogli skupić się na swoich praktykach, unikając rozproszenia.</p>
+          <p><strong>Szacunek do innych uczestników</strong> – w czasie obchodów należy zachować ciszę i szacunek wobec innych ludzi, którzy biorą udział w ceremoniach.</p>
+          <p><strong>Bezpieczeństwo w trakcie działalności charytatywnej</strong> – jeśli bierzesz udział w działaniach charytatywnych, pamiętaj o przestrzeganiu zasad bezpieczeństwa, szczególnie jeśli angażujesz się w zbiórki funduszy lub pomoc potrzebującym.</p>
+      </section>
+  
+      <section>
+          <h2>5. Wskazówki dotyczące obchodów Vesak</h2>
+          <p><strong>Wspólne modlitwy</strong> – warto uczestniczyć w wspólnych modlitwach, ponieważ łączą one wiernych w duchu jedności i harmonii.</p>
+          <p><strong>Zaangażowanie w lokalną społeczność</strong> – zachęca się do pomagania innym w ramach obchodów, np. organizowania wydarzeń edukacyjnych na temat Buddyzmu czy angażowania się w wolontariat.</p>
+          <p><strong>Odpowiedzialność ekologiczna</strong> – podczas obchodów Vesak wielu ludzi dba o ekologię, stosując biodegradowalne dekoracje i unikając niepotrzebnego marnotrawstwa.</p>
+      </section>
+
+      </div>
+      <center>
+        <div class="footer2">
+          <div class="content-container1">2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</div>
+          </div>
+        </center>
+    </div>
+
+    <!-- Podstrona 3 -->
+    <div id="page3" class="page-content">
+      <center>
+        <div class="potrawy1">
+          <h1>Potrawy i Tradycje</h1>
+          <h2>
+            W Polsce tradycje potraw świątecznych są głęboko zakorzenione w
+            kulturze i zwyczajach, odzwierciedlając zarówno religijne, jak i
+            regionalne dziedzictwo. Najbardziej znane święta, podczas których
+            szczególnie celebruje się tradycyjne jedzenie, to Boże Narodzenie. Podczas tego swieta wystawianych jest 12 rożych bez mięsnych potraw wyrozniamy m.in;
+            
+         
+          </h2>
+        </div class="potrawy">
+        <div class="potrawy2">
+          <h1>Barszcz z uszkami</h1>
+          <h3> zupa z buraków podawana z małymi pierożkami z grzybami.</h3>
+        <hr width="300" height="4" />
+        <img src="barszcz.jpg" class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>Pierogi z kapusta i grzybami</h1>
+          <h3>jedno z najpopularniejszych dań, obowiązkowe na wielu stołach.</h3>
+        <hr width="300" height="4" />
+        <img src="pierogi.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>Gołąbki z kaszą i grzybami.</h1>
+          <h3>potrawa wigilijna, w której liście kapusty zawijają farsz z kaszy i grzybów, gotowane na delikatnym bulionie.</h3>
+        <hr width="300" height="4" />
+        <img src="golabki.jpg" class="photo" />
+        </div>
+        <div class="potrawy2">
+          <h1>Kutia</h1>
+          <h3>słodka potrawa z maku, miodu, orzechów i pszenicy</h3>
+        <hr width="300" height="4" />
+        <img src="Kutia.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>Smażony karp</h1>
+          <h3>ryba symbolizująca dostatek</h3>
+        <hr width="300" height="4" />
+        <img src="karp.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>Kluski z makiem</h1>
+          <h3>słodkie danie, w którym ugotowane kluski mieszane są z mielonym makiem, cukrem, masłem i rodzynkami, symbolizujące radość i obfitość.</h3>
+        <hr width="300" height="4" />
+        <img src="kluski"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>Kapusta z grochem lub z grzybami.</h1>
+          <h3>postna potrawa, w której kapusta kiszona lub świeża łączy się z grochem lub grzybami, tworząc aromatyczne i sycące danie.</h3>
+          <hr width="300" height="4" />
+          <img src="kapusta.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>ryba po grecku</h1>
+          <h3>panierowana i smażona ryba, najczęściej dorsz lub karp, jest zalewana duszoną mieszanką warzyw w sosie pomidorowym, tworząc aromatyczną potrawę</h3>
+        <hr width="300" height="4" />
+        <img src="ryba.jpg" class="photo" />
+        </div>
+        <div class="potrawy2">
+          <h1>sałatka jarzynowa</h1>
+          <h3>klasyczne polskie danie, w którym gotowane warzywa, takie jak ziemniaki, marchew, groszek, oraz jajka, mieszają się z majonezem, tworząc smaczną i kremową sałatkę.</h3>
+        <hr width="300" height="4" />
+
+        <img src="salatka.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>kompot z suszonych owoców</h1>
+          <h3>napój na bazie gotowanych suszonych owoców, takich jak śliwki, jabłka i gruszki, który jest słodki, aromatyczny i często podawany na Wigilii.</h3>
+        <hr width="300" height="4" />
+        <img src="kompot.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>pierniki</h1>
+          <h3>aromatyczne ciastka z mąki, miodu, przypraw korzennych i cukru, pieczone na Boże Narodzenie, często dekorowane lukrem.</h3>
+        <hr width="300" height="4" />
+        <img src="pierniki.jpg"  class="photo"/>
+        </div>
+        <div class="potrawy2">
+          <h1>śledzie</h1>
+          <h3>potrawa, w której śledzie, najczęściej marynowane w oleju, occie lub śmietanie, podawane są z cebulą lub innymi dodatkami, stanowiąc tradycyjny element wigilijnego stołu.</h3>
+          <hr width="300" height="4" />
+          <img src="sledzie.jpg"  class="photo"/>
+        </div>
+        <div class="footer2">
+        <div class="content-container1">2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</div>
+        </div>
+      </center>
+      
+    </div>
+
+    <!-- Podstrona 4 -->
+    <div id="page4" class="page-content">
+      <div class="content-container">
+        <h1>Bezpieczeństwo podczas ferii zimowych</h1>
+        <section>
+          
+          <h2>1. Bezpieczne zabawy na śniegu</h2>
+          <h3>Nie zjeżdżaj na nartach lub snowboardzie w miejscach, które nie są do tego przeznaczone.</h3>
+          <h3>Używaj kasku ochronnego podczas jazdy na nartach i snowboardzie.</h3>
+          <h3>Upewnij się, że sprzęt narciarski jest dobrze dopasowany i w dobrym stanie technicznym.</h3>
+      </section>
+  
+      <section>
+          <h2>2. Ostrożność w górach</h2>
+          <h3>Nie wychodź na nieoznakowane szlaki turystyczne.</h3>
+          <h3>Zawsze sprawdzaj prognozę pogody przed wyjściem w góry.</h3>
+          <h3>Informuj bliskich o planowanej trasie i czasie powrotu.</h3>
+      </section>
+  
+      <section>
+          <h2>3. Bezpieczne kąpiele</h2>
+          <h3>Nie wchodź do wody po spożyciu alkoholu.</h3>
+          <h3>Unikaj kąpieli w miejscach nieznanych lub bez nadzoru ratowników.</h3>
+          <h3>Przestrzegaj zasad bezpieczeństwa na lodowiskach, szczególnie podczas wchodzenia na lód.</h3>
+      </section>
+  
+      <section>
+          <h2>4. Wskazówki dotyczące zdrowia</h2>
+          <h3>Ubieraj się odpowiednio do pogody, aby uniknąć wychłodzenia.</h3>
+          <h3>Regularnie pij wodę, aby zapobiec odwodnieniu, nawet w zimie.</h3>
+          <h3>Jeśli jesteś chory, zrezygnuj z aktywności fizycznej, aby uniknąć pogorszenia stanu zdrowia.</h3>
+      </section>
+      <section>
+        <h2>5. Bezpieczeństwo na drodze</h2>
+        <h3>Używaj odpowiednich opon zimowych, aby uniknąć poślizgów na zaśnieżonych drogach.</h3>
+        <h3>Przygotuj samochód na zimowe warunki, sprawdzając stan techniczny pojazdu.</h3>
+        <h3>Jeździj ostrożnie, zachowując większą odległość od innych pojazdów.</h3>
+        <h3>Nie używaj telefonu komórkowego podczas jazdy, aby uniknąć rozproszenia uwagi.</h3>
+    </section>
+
+    <section>
+        <h2>6. Zachowanie ostrożności przy organizowaniu wyjazdów</h2>
+        <h3>Przed wyjazdem sprawdź, czy miejsce docelowe posiada odpowiednie warunki do uprawiania sportów zimowych.</h3>
+        <h3>Upewnij się, że masz wykupione odpowiednie ubezpieczenie podróżne.</h3>
+        <h3>Przygotuj plan awaryjny i lista kontaktów w razie problemów.</h3>
+        <h3>Zabierz ze sobą niezbędny sprzęt oraz zapas odzieży w razie zmiany pogody.</h3>
+    </section>
+  
+      </div>
+      <center>
+        <div class="footer2">
+          <div class="content-container1">2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</div>
+          </div>
+        </center>
+    </div>
+
+    <!-- Podstrona 5 -->
+    <div id="page5" class="page-content">
+      <div class="content-container">
+        <section>
+          <h2>Co to jest Sylwester?</h2>
+          <p>
+              Sylwester to wieczór 31 grudnia, ostatni dzień roku. Jest to czas podsumowań, świętowania oraz witania Nowego Roku.
+          </p>
+      </section>
+      
+      <section>
+          <h2>Tradycje sylwestrowe</h2>
+          <p>
+              Wiele osób spędza ten wieczór na balach, imprezach czy spotkaniach z bliskimi. Popularne są też fajerwerki oraz składanie noworocznych życzeń.
+          </p>
+          <p>
+              W różnych krajach istnieje wiele unikalnych tradycji. Na przykład:
+             
+                  <p><strong>Hiszpania:</strong> Zjadanie 12 winogron na szczęście podczas bicia zegara o północy.</p>
+                  <p><strong>Włochy:</strong> Noszenie czerwonej bielizny dla powodzenia w nadchodzącym roku.</p>
+                  <p><strong>Polska:</strong> Organizowanie hucznych bali i pokazów sztucznych ogni.</p>
+                  <p><strong>USA:</strong> Spuszczanie kuli z wieżowca Times Square w Nowym Jorku.</p>
+              
+          </p>
+      </section>
+      
+      <section>
+          <h2>Historia Sylwestra</h2>
+          <p>
+              Nazwa "Sylwester" pochodzi od papieża Sylwestra I, który zmarł 31 grudnia 335 roku. Wierzono, że po jego śmierci nastąpi koniec świata, jednak nic takiego się nie wydarzyło, a ludzie zaczęli świętować początek nowego roku.
+          </p>
+      </section>
+      
+      <section>
+          <h2>Postanowienia noworoczne</h2>
+          <p>
+              Wiele osób z okazji Nowego Roku robi postanowienia, takie jak:
+            
+                  Rozpoczęcie zdrowego trybu życia.
+                  Nauka nowych umiejętności.
+                  Więcej czasu z rodziną.
+                  Podróżowanie.
+              
+          </p>
+      </section>
+      
+      <section>
+          <h2>Największe imprezy sylwestrowe</h2>
+          <p>
+              Niektóre z największych imprez sylwestrowych odbywają się w:
+              <ul>
+                  <p><strong>Sydney (Australia):</strong> Pokazy fajerwerków nad Operą w Sydney.</p>
+                  <p><strong>Nowy Jork (USA):</strong> Słynne opuszczanie kuli na Times Square.</p>
+                  <p><strong>Berlin (Niemcy):</strong> Wielka impreza pod Bramą Brandenburską.</p>
+                  <p><strong>Rio de Janeiro (Brazylia):</strong> Plażowa impreza na Copacabanie.</p>
+              </ul>
+          </p>
+      </section>
+      
+      <div class="countdown">
+        <h3>Do Sylwestra:</h3>
+        <p id="countdown-newyear"></p> <!-- Miejsce na odliczanie do Nowego Roku -->
+    </div>
+    
+      </div>
+      <center>
+      <div class="footer2">
+        <div class="content-container1">2024 Świąteczna Strona, ZST Trzcianka. Wszystkie prawa zastrzeżone.</div>
+        </div>
+      </center>
+     
+  </div>
+    
+
+    <script>
+      function showPage(pageId) {
+        // Ukrywa wszystkie podstrony
+        const pages = document.querySelectorAll(".page-content");
+        pages.forEach((page) => page.classList.remove("active"));
+
+        // Pokazuje wybraną podstronę
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+          targetPage.classList.add("active");
+          // Dodaje nowy stan do historii przeglądarki
+          history.pushState({ page: pageId }, "", `#${pageId}`);
+        } else {
+          console.error("Nie znaleziono podstrony:", pageId);
+        }
+      }
+
+      // Obsługa przycisku "cofnij" i "dalej" w przeglądarce
+      window.onpopstate = function (event) {
+        if (event.state && event.state.page) {
+          showPage(event.state.page);
+        } else {
+          showPage("home");
+        }
+      };
+
+      // Sprawdza, czy jest hash w URL po załadowaniu strony
+      document.addEventListener("DOMContentLoaded", () => {
+        const initialPage = window.location.hash
+          ? window.location.hash.substring(1)
+          : "home";
+        showPage(initialPage);
+      });
+
+     // Funkcja odliczania
+     function startCountdown(elementId, targetDate, eventName) {
+            const targetTime = new Date(targetDate).getTime();
+
+            const countdownFunction = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = targetTime - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById(elementId).innerHTML = days + " dni " + hours + " godzin " + minutes + " minut " + seconds + " sekund ";
+
+                if (distance < 0) {
+                    clearInterval(countdownFunction);
+                    document.getElementById(elementId).innerHTML = "Wesołych " + eventName + "!";
+                }
+
+            }, 1000);
+        }
+
+        // Odliczanie do Bożego Narodzenia
+        startCountdown("countdown-xmas", "December 25, 2024 00:00:00", "Świąt");
+
+        // Odliczanie do Sylwestra
+        startCountdown("countdown-newyear", "January 1, 2025 00:00:00", "Nowego Roku");
+
+        // Funkcja wyświetlająca pop-up po 2 sekundach
+        setTimeout(function() {
+            document.getElementById("popup1").style.display = "block";
+        }, 10000);
+
+        // Funkcja wyświetlająca pop-up po 5 sekundach
+        setTimeout(function() {
+            document.getElementById("popup2").style.display = "block";
+        }, 30000);
+
+        // Funkcja zamykająca pop-up
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = "none";
+        }
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+.page-content {
+  display: none;
+  padding: 20px;
+  border-radius: 10px;
+  
+}
+.page-content.active {
+  display: block;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "left-side center right-side"
+    "footer footer footer";
+  gap: 10px;
+  height: 600px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #64ac3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px;
+  margin-bottom: 10px;
+}
+
+.header-buttons {
+  margin-top: 10px;
+}
+
+.header-buttons button {
+  background-color: #fff;
+  color: #64ac3b;
+  border-style: inset black;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.header-buttons button:hover {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.left-side {
+  grid-area: left-side;
+  background-color: #e6fafd ;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #000;
+}
+
+.center {
+  grid-area: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: black;
+}
+
+.right-side {
+  grid-area: right-side;
+  position: relative; /* Zapewnia, że element wewnętrzny będzie w obrębie tego diva */
+  width: 100%; /* Ustala szerokość na 100% */
+  background-image: url('zdjecia/reklama.jpg'); /* Obrazek reklamy */
+  background-size: cover; /* Zapewnia, że obrazek wypełni cały `div` */
+  background-position: center; /* Centruje obrazek */
+  color: white; /* Kolor tekstu */
+  text-align: center; /* Wyrównanie tekstu w pionie */
+  display: flex; /* Umożliwia łatwe centrowanie treści */
+  justify-content: center; /* Centruje w poziomie */
+  align-items: center; /* Centruje w pionie */
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #64ac3b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius:10px;
+}
+.potrawy1 {
+  width: 80%;
+  height: auto;
+  border: 3px solid rgb(172,172,172);
+  padding: 50px;
+  margin: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 15px;
+  
+  
+}
+.potrawy2 {
+  width: 60%;
+  height: auto;
+  border: 3px solid rgb(172, 172, 172);
+  padding: 50px;
+  margin: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 5px 5px 15px ;
+}
+.photo {
+  width: 200px;
+  border-radius: 20px;
+  border-style: outset;
+  box-shadow: 3px 3px 5px 3px;
+}
+.countdown {
+  font-size: 1.5em;  /* Zmniejszono czcionkę */
+  color: #000000;
+  margin-top: 20px;
+}
+.countdown p {
+  font-size: 0,8em;
+  color: #000;
+}
+#home {
+  background-image: url('zima.webp'); /* Zmienna link na URL Twojego obrazu */
+  background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+  background-position: center; /* Wyrównanie obrazu do środka */
+  background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+  color: white; /* Kolor tekstu na tle */
+ }
+
+#page1 {
+  background-image: url('boze narodzenie.jpg'); /* Zmienna link na URL Twojego obrazu */
+  background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+  background-position: center; /* Wyrównanie obrazu do środka */
+  background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+  color: rgb(0, 0, 0); /* Kolor tekstu na tle */
+}
+
+#page2 {
+  background-image: url('budda.jpg'); /* Zmienna link na URL Twojego obrazu */
+  background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+  background-position: center; /* Wyrównanie obrazu do środka */
+  background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+  color: rgb(0, 0, 0); /* Kolor tekstu na tle */
+}
+
+#page3 {
+  background-image: url('potrawy.jpg'); /* Zmienna link na URL Twojego obrazu */
+  background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+  background-position: center; /* Wyrównanie obrazu do środka */
+  background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+  color: rgb(0, 0, 0); /* Kolor tekstu na tle */
+}
+
+#page4 {
+  background-image: url('ferie.jpg'); /* Zmienna link na URL Twojego obrazu */
+  background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+  background-position: center; /* Wyrównanie obrazu do środka */
+  background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+  color: rgb(0, 0, 0); /* Kolor tekstu na tle */
+}
+
+#page5 {
+padding: 20px;
+background-image: url('sylwester.png'); /* Zmienna link na URL Twojego obrazu */
+background-size: cover; /* Dopasowanie tła do rozmiaru okna */
+background-position: center; /* Wyrównanie obrazu do środka */
+background-attachment: fixed; /* Utrzymywanie tła w jednym miejscu podczas przewijania */
+color: rgb(0, 0, 0); /* Kolor tekstu na tle */
+}
+.content-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przezroczystością */
+  padding: 40px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer2 {
+  width: 50%;
+  height: auto;
+  border: 3px solid rgb(172, 172, 172);
+  margin-top: 20px;
+  border-radius: 10px;
+ 
+  box-shadow: 5px 5px 15px ;
+}
+.content-container1 {
+  background-color: rgba(255, 255, 255, 0.8); /* Białe tło z przezroczystością */
+  padding: 40px;
+  border-radius: 7px;
+  width: auto;
+  max-width: 800px;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ /* Styl pop-upu w prawym dolnym rogu */
+ .popup {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8); /* półprzezroczyste białe tło */
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+  display: none;
+  z-index: 9999;
+  text-align: center;
+}
+
+/* Pop-up 1 w prawym dolnym rogu */
+#popup1 {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Pop-up 2 w lewym dolnym rogu */
+#popup2 {
+  bottom: 20px;
+  left: 20px;
+}
+
+/* Przyciski w pop-upach */
+.popup button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.popup button:hover {
+  background-color: #ff4500;
+}
+
+#popup button:hover {
+  background-color: #ff4500;
+}
