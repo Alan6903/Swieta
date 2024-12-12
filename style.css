@@ -83,7 +83,7 @@ button {
   grid-area: right-side;
   position: relative; /* Zapewnia, że element wewnętrzny będzie w obrębie tego diva */
   width: 100%; /* Ustala szerokość na 100% */
-  background-image: url('zdjecia/reklama.jpg'); /* Obrazek reklamy */
+  background-image: url('reklama.jpg'); /* Obrazek reklamy */
   background-size: cover; /* Zapewnia, że obrazek wypełni cały `div` */
   background-position: center; /* Centruje obrazek */
   color: white; /* Kolor tekstu */
